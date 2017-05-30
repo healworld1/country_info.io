@@ -87,7 +87,7 @@
         headers: {
           "Authorization": "Bearer " + accessToken
         },
-        data: JSON.stringify({query: text, lang: "en", sessionId: "1a7e6d0e-997a-4ecf-bdde-aa7f8a1c2766"}),
+        data: JSON.stringify({query: text, lang: "en"}),
         success: function(data) {
           prepareResponse(data);
         },
@@ -230,9 +230,4 @@
 
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet" type="text/css">
 </body>
-<iframe>
-    width="350"
-    height="430"
-    src="https://console.api.ai/api-client/demo/embedded/31975edd-3089-4c07-8fb3-57a1570abbee">
-</iframe>
 </html>
